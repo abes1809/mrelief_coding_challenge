@@ -1,0 +1,71 @@
+
+<div class="container">
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-info">
+        <%= msg %>
+      </div>
+    <% end %>
+
+    <h1> Start Your Application! </h2>
+
+    <%= form_tag cali_app_create_path do %>
+        <div class="form-group">
+            <%= label_tag 'name', "Name (First, Middle, Last)" %>
+            <%= text_field_tag 'name', '', {:required => true, :placeholder => "full name"} %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag 'home_address', "Home Address" %>
+            <%= text_field_tag 'home_address','', {:required => true, :placeholder => "home address"} %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'city', "City" %>
+            <%= text_field_tag 'city', '', {:required => true, :placeholder => "city"} %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'state', "State" %>
+            <%= text_field_tag 'state', '', {:required => true, :placeholder => "state"} %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'apt', "Apartment Number (If applicable)" %>
+            <%= text_field_tag 'apt', '', {:placeholder => "apartment number"} %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'county', "County" %>
+            <%= text_field_tag 'county', '', {:required => true, :placeholder => "county"} %>
+        </div>
+        <div class="form-group">
+            <%= label_tag 'zip', "Zip Code" %>
+            <%= text_field_tag 'zip', '', {:required => true, :placeholder => "zip code"} %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag 'home_phone', "Home Phone" %>
+            <%= text_field_tag 'home_phone', '', {:required => true, :placeholder => "home phone"} %>
+        </div>
+
+        <div class="container" style="padding-left:0">
+            <%= label_tag 'programs', "What Prorgams Are You Applying For?" %>
+            <br>
+            <div class="row">
+                <div class="col-xs-2">
+                    <%= label_tag 'cal_fresh', "CalFresh" %>
+                    <%= check_box_tag 'cal_fresh', 'on' %>
+                </div>
+                <div class="col-xs-2">
+                    <%= label_tag 'cash_aid', "Cash Aid" %>
+                    <%= check_box_tag 'cash_aid', 'on' %>
+                </div>
+                <div class="col-xs-2">
+                    <%= label_tag 'health_coverage', "Health Coverage" %>
+                    <%= check_box_tag 'health_coverage', 'on' %>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <%= submit_tag 'Get Application!', class: "btn btn-primary", data: {:confirm => "Are you sure you are ready to submit?"} %>
+        </div>
+    <% end %>
+</div>
+
