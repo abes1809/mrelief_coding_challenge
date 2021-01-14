@@ -23,9 +23,9 @@ other options to use.
 dize@mrelief.com. Once you have finished Part 1 and 2, please send the entire app back to me. Thank you so much and I look forward to reviewing your work.
 
 
-## AA Completed Challenge
+# AA Completed Challenge
 
-# Installation Instructions
+## Installation Instructions
 
 * clone this repo by running 'git clone https://github.com/abes1809/mrelief_coding_challenge.git'
 
@@ -41,7 +41,7 @@ dize@mrelief.com. Once you have finished Part 1 and 2, please send the entire ap
 
 * Refresh the page to start a new application!
 
-# Tech Used
+## Tech Used
 
 * I used the fillable-pdf rails gem to dynamically fill in the application 'https://github.com/vkononov/fillable-pdf'.
 
