@@ -14,7 +14,7 @@ class CaliAppController < ApplicationController
                 disposition: "attachment"
               )
         else
-            redirect_to '/', alert: "Encoutnered error while creating PDF please try again."
+            redirect_to '/', alert: "Encountered error while creating PDF please try again."
         end
     end
 
