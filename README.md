@@ -47,4 +47,6 @@ dize@mrelief.com. Once you have finished Part 1 and 2, please send the entire ap
 
 * I used the pry gem for debugging 'https://github.com/pry/pry'.
 
+* I used Boostrap for some basic page formatting and styling.
+
 * I incorporated a couple tests as well - run 'ruby -Itest test/models/pdf_test.rb' in your app directory to run tests.
