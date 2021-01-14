@@ -27,13 +27,13 @@ dize@mrelief.com. Once you have finished Part 1 and 2, please send the entire ap
 
 ## Installation Instructions
 
-* clone this repo by running 'git clone https://github.com/abes1809/mrelief_coding_challenge.git'
+* Clone this repo by running 'git clone https://github.com/abes1809/mrelief_coding_challenge.git'
 
-* run bundle install in your terminal.
+* Run bundle install in your terminal.
 
 * Ensure you are running at least ruby 2.4.0 and your JAVA_HOME path is defined on your machine. For more information on setting your JAVA_HOME path see 'https://docs.opsgenie.com/docs/setting-java_home'.
 
-* type in 'rails s' into your terminal to start the server!
+* Type in 'rails s' into your terminal to start the server!
 
 * Go to 'http://localhost:3000/' to see the form.
 
